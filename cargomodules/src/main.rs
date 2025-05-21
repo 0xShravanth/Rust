@@ -4,19 +4,32 @@ fn main() {
 
 // cargo install cargo-modules
 //cargo modules generate tree --lib 
+// cargo new -> create a new pacakage -> package stores create crate ( binary crate or lib crate ) -> crate contains modules 
+// main.rs is the entry point of the package/ root of the package
+// if lib crate is created, then lib.rs is the entry point of the package/ main root of the package
 
-// cargo modules --help
-// cargo modules --list
-// cargo modules --list --all
-// cargo modules --list --all --output-format json
-// cargo modules --list --all --output-format json --output-file modules.json
-// cargo modules --list --all --output-format json --output-file modules.json --output-dir ./modules
-// cargo modules --list --all --output-format json --output-file modules.json --output-dir ./modules --output-file-name modules
-// cargo modules --list --all --output-format json --output-file modules.json --output-dir ./modules --output-file-name modules --output-file-type json
-// cargo modules --list --all --output-format json --output-file modules.json --output-dir ./modules --output-file-name modules --output-file-type json --output-file-encoding utf-8
-// cargo modules --list --all --output-format json --output-file modules.json --output-dir ./modules --output-file-name modules --output-file-type json --output-file-encoding utf-8 --output-file-compression gzip
-// cargo modules --list --all --output-format json --output-file modules.json --output-dir ./modules --output-file-name modules --output-file-type json --output-file-encoding utf-8 --output-file-compression gzip --output-file-encryption aes
-// cargo modules --list --all --output-format json --output-file modules.json --output-dir ./modules --output-file-name modules --output-file-type json --output-file-encoding utf-8 --output-file-compression gzip --output-file-encryption aes --output-file-signature sha256
-// cargo modules --list --all --output-format json --output-file modules.json --output-dir ./modules --output-file-name modules --output-file-type json --output-file-encoding utf-8 --output-file-compression gzip --output-file-encryption aes --output-file-signature sha256 --output-file-signature-key 1234567890
-// cargo modules --list --all --output-format json --output-file modules.json --output-dir ./modules --output-file-name modules --output-file-type json --output-file-encoding utf-8 --output-file-compression gzip --output-file-encryption aes --output-file-signature sha256 --output-file-signature-key 1234567890 --output-file-signature-algorithm sha256
-// cargo modules --list --all --output-format json --output-file modules.json --output-dir ./modules --output-file-name modules --output-file-type json --output-file-encoding utf-8 --output-file-compression gzip --output-file-encryption aes --output-file-signature sha256 --output-file-signature-key 1234567890 --output-file-signature-algorithm sha256 --output-file-signature-key-type rsa
+// crate rules:
+// 1. crate can contain multiple modules
+// 2. module can contain multiple submodules
+// 3. module can contain multiple functions
+
+// 4. package can have 0 or 1 lib crate
+// 5. package can have 0 or more binary crate bin folder contain binary crate
+
+// creating a lib crate
+// cargo new --lib cargomodules
+
+// creating a binary crate
+// cargo new --bin cargomodules
+
+
+// cargo install cargo-modules
+    // cargo modules generate tree --lib 
+    // cargo new -> create a new pacakage -> package stores create crate ( binary crate or lib crate ) -> crate contains modules 
+    // cargo build -> build the package
+    // cargo run -> run the package
+    // cargo test -> test the package
+    // cargo doc -> generate documentation for the package
+    // cargo fmt -> format the code
+    // cargo clippy -> lint the code
+    // cargo update -> update the dependencies
