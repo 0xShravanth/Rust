@@ -3,11 +3,11 @@
 // //             println!("Adding to waitlist");
 // //         }
 // //         pub fn seat_at_table(){
-// //             println!("Seating at table");
+// //            println!("Seating at table");
 // //         }
 // //     }
 //     pub mod serving; //{
-//     //     fn take_order(){
+//     //    fn take_order(){
 //     //         println!("Taking order");
 //     //     }
 //     //     fn serve_order(){

@@ -3,6 +3,7 @@ fn main(){
     eat_at_restaurant()
     
 }
+
 fn serve_order(){
         println!("Serving order");
     }

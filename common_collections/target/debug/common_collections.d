@@ -1,0 +1,1 @@
+D:\Rust\common_collections\target\debug\common_collections.exe: D:\Rust\common_collections\src\hashmapcollections.rs D:\Rust\common_collections\src\main.rs D:\Rust\common_collections\src\stringcollection.rs D:\Rust\common_collections\src\vectoraccess.rs
